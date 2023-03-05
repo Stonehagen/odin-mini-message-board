@@ -1,0 +1,8 @@
+extends layout
+
+block content 
+  h1 Send a new Message
+  form( method='POST' action='/new')
+    input( type='text' name='author' )
+    input( type='text' name='message' )
+    button( type='submit' ) send
